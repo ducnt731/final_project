@@ -6,32 +6,8 @@ import TheaterPage from "./pages/users/theaterPage"
 import LoginForm from "./component/LoginForm/loginForm"
 import AdminPage from "./pages/admin/adminPage"
 import Movie from "./component/Movies/movie"
-import Customer from "./component/Customers/customer"
+import Account from "./component/Manage_account/accounts"
 import LayoutNonHeader from "./pages/users/theme/layoutNonHeader/LayoutNonHeader"
-
-const renderAdminRouter = () => {
-    const adminRouter = [
-        {
-            path: Router.ADMIN.ADMINHOME,
-            component: <AdminPage />
-        },
-        {
-            path: Router.ADMIN.MOVIES,
-            component: <Movie />
-        }
-    ]
-    return (
-        <AdminPage>
-            <Routes>
-                {
-                    adminRouter.map((item, key) => (
-                        <Route key={key} path={item.path} element={item.component} />
-                    ))
-                }
-            </Routes>
-        </AdminPage>
-    )
-}
 
 const renderUserRouter = () => {
     const userRouter = [
@@ -59,8 +35,8 @@ const renderUserRouter = () => {
             component: <Movie />
         },
         {
-            path: Router.ADMIN.CUSTOMER,
-            component: <Customer />
+            path: Router.ADMIN.ACCOUNT,
+            component: <Account />
         }
     ]
     return (

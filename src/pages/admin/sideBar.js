@@ -18,17 +18,12 @@ const SideBar = ({openSidebarToggle, OpenSidebar}) => {
             </li>
             <li className='sidebar-list-item'>
                 <a href="admin/movie">
-                    <i className="fa-solid fa-table-cells-large icon"></i> Movie
+                    <i className="fa-solid fa-table-cells-large icon"></i> Manage Movie
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
-                    <i className="fa-solid fa-users icon"></i> Staff
-                </a>
-            </li>
-            <li className='sidebar-list-item'>
-                <a href="admin/customer">
-                    <i className="fa-solid fa-users icon"></i> Customers
+                <a href="admin/manage_accounts">
+                    <i className="fa-solid fa-users icon"></i> Manage Accounts
                 </a>
             </li>
             <li className='sidebar-list-item'>
@@ -41,11 +36,11 @@ const SideBar = ({openSidebarToggle, OpenSidebar}) => {
                     <i className="fa-solid fa-ticket icon"></i> Coupon
                 </a>
             </li>
-            <li className='sidebar-list-item'>
+            {/* <li className='sidebar-list-item'>
                 <a href="">
-                    {/* <BsFillGearFill className='icon'/> Setting */}
+                    <BsFillGearFill className='icon'/> Setting
                 </a>
-            </li>
+            </li> */}
         </ul>
     </aside>
     )
