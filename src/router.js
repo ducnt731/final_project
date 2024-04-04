@@ -8,6 +8,8 @@ import AdminPage from "./pages/admin/adminPage"
 import Movie from "./component/Movies/movie"
 import Account from "./component/Manage_account/accounts"
 import LayoutNonHeader from "./pages/users/theme/layoutNonHeader/LayoutNonHeader"
+import RegisterForm from "./component/registerForm.js/registerForm"
+import ForgotPassword from "./component/ForgotPassword/ForgotPassword"
 
 const renderUserRouter = () => {
     const userRouter = [
@@ -24,6 +26,12 @@ const renderUserRouter = () => {
     const loginRouter = [{
         path: Router.USER.LOGIN,
         component: <LoginForm />
+    }, {
+        path: Router.USER.REGISTER,
+        component: <RegisterForm />
+    }, {
+        path: Router.USER.FORGOT_PASSWORD,
+        component: <ForgotPassword />
     }]
     const adminRouter = [
         {

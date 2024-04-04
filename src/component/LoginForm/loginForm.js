@@ -29,15 +29,20 @@ const LoginForm = () => {
         setLoadingAPI(true)
         let res = await loginApi(email, password)
         console.log(res.data)
-        const data = res.data
-        if (data) {
-            localStorage.setItem("email", data.user.email)
-            localStorage.setItem("name", data.user.name)
-            localStorage.setItem("role", data.user.role)
-            localStorage.setItem("user_id", data.user._id)
-            localStorage.setItem("token", data.accessToken)
-            navigate('/')
+        try {
+            const data = res.data
+            if (data) {
+                localStorage.setItem("email", data.user.email)
+                localStorage.setItem("name", data.user.name)
+                localStorage.setItem("role", data.user.role)
+                localStorage.setItem("user_id", data.user._id)
+                localStorage.setItem("token", data.accessToken)
+                navigate('/')
+            }
+        } catch (error) {
+
         }
+
         // if (res && res.token) {
         //     localStorage.setItem("token", res.token)
         //     navigate("/")
@@ -76,19 +81,27 @@ const LoginForm = () => {
                     </div>
                     <div className="remember-forgot">
                         <label><input type="checkbox" />Remember me</label>
-                        <a href="/">Forgot password</a>
+                        <a href="/forgot-password">Forgot password</a>
                     </div>
 
                     <button
                         type="submit"
                         disabled={email && password ? false : true}
                     >{loadingAPI && <i class="fa-solid fa-sync fa-spin"></i>} Login</button>
+                    {/* <!-- Thêm nút đăng nhập bằng Google --> */}
+                    <a href="/auth/google" >
+                        <button type="button"
+                            className="btn-google">
+                            Login with Google
+                        </button>
+                    </a>
                     <div className="register-link">
-                        <p>Don't have an account? <a href="#">Register</a></p>
+                        <p>Don't have an account? <a href="/register">Register</a></p>
+
                     </div>
                 </form>
             </div>
-        </div>
+        </div >
     )
 }
 

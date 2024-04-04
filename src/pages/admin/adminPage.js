@@ -10,10 +10,10 @@ import { useNavigate } from "react-router-dom"
 const AdminPage = ({ children, ...prop }) => {
     const navigate = useNavigate()
     useEffect(() => {
-        // if (localStorage.getItem('role') != "admin") {
-        //     toast.error("You must be admin to render this site!")
-        //     navigate('/')
-        // }
+        if (localStorage.getItem('role') != "admin") {
+            toast.error("You must be admin to render this site!")
+            navigate('/')
+        }
     }, [])
     const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
 

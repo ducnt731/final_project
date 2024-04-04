@@ -1,4 +1,4 @@
-.login-form {
+.login-form{
     width: 420px;
     background: transparent;
     border: 4px solid black;
@@ -9,19 +9,19 @@
     box-shadow: 0 0 10px red;
 }
 
-.login-form h1 {
+.login-form h1{
     font-size: 36px;
     text-align: center;
 }
 
-.input-box {
+.input-box{
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
 
-.input-box input {
+.input-box input{
     width: 100%;
     height: 100%;
     background: transparent;
@@ -33,20 +33,11 @@
     padding: 20px 45px 20px 20px;
 }
 
-.input-box input::placeholder {
+.input-box input::placeholder{
     color: #fff;
 }
 
-.btn-google {
-    margin-top: 10px;
-    background-color: #DB4437;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.input-box .icon {
+.input-box .icon{
     position: absolute;
     right: 20px;
     top: 50%;
@@ -54,28 +45,28 @@
     font-size: 16px;
 }
 
-.remember-forgot {
+.remember-forgot{
     display: flex;
     justify-content: space-around;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
 
-.remember-forgot label input {
+.remember-forgot label input{
     accent-color: #fff;
     margin-right: 4px;
 }
 
-.remember-forgot a {
+.remember-forgot a{
     color: #fff;
     text-decoration: none;
 }
 
-.remember-forgot a:hover {
+.remember-forgot a:hover{
     text-decoration: underline;
 }
 
-.wrapper button {
+.wrapper button{
     width: 100%;
     height: 45px;
     background: red;
@@ -89,24 +80,23 @@
     font-weight: 700;
 }
 
-button[disabled=disabled],
-button:disabled {
+button[disabled=disabled], button:disabled{
     cursor: not-allowed;
     background: #fff;
 }
 
-.register-link {
+.register-link{
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
 }
 
-.register-link p a {
+.register-link p a{
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
 
-.register-link p a:hover {
+.register-link p a:hover{
     text-decoration: underline;
 }
