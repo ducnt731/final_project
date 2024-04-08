@@ -7,7 +7,10 @@ const HeaderAdmin = ({OpenSidebar}) => {
                 <i className="fa-solid fa-align-justify icon" onClick={OpenSidebar}></i>
             </div>
             <div className='header-left'>
-                <i className="fa-solid fa-magnifying-glass icon"></i>
+                <form className="search d-flex" role="search">
+                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button className="btn btn-outline-dark" type="submit">Search</button>
+                </form>
             </div>
             <div className='header-right'>
                 <i className="fa-solid fa-bell icon"></i>

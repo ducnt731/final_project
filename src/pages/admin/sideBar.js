@@ -12,27 +12,27 @@ const SideBar = ({openSidebarToggle, OpenSidebar}) => {
 
         <ul className='sidebar-list'>
             <li className='sidebar-list-item'>
-                <a href="/admin">
+                <a className="item" href="/admin/dashboard">
                     <i className="fa-solid fa-chart-simple icon"></i> Dashboard
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <a href="admin/movie">
+                <a className="item" href="admin/movie">
                     <i className="fa-solid fa-table-cells-large icon"></i> Manage Movie
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <a href="admin/manage_accounts">
+                <a className="item" href="admin/manage_accounts">
                     <i className="fa-solid fa-users icon"></i> Manage Accounts
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
+                <a className="item" href="">
                     <i className="fa-solid fa-location-dot icon"></i> Theaters
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
+                <a className="item" href="">
                     <i className="fa-solid fa-ticket icon"></i> Coupon
                 </a>
             </li>

@@ -33,7 +33,6 @@ const Accounts = () => {
     }
     const handleAddNew = async (account) => {
         try {
-
             const response = await addNewAccount(account);
             if (response) {
                 await getAllUser()
@@ -41,7 +40,7 @@ const Accounts = () => {
                 toast.success("Create success!")
             }
         } catch (error) {
-
+            toast.error("Create error ")
         }
     }
     const handleEdit = (accountEdit) => {

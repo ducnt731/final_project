@@ -1,8 +1,6 @@
 import { memo, useState } from "react"
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { addNewAccount } from "../../service/userService";
-import { toast } from "react-toastify";
 import { formatDate } from "../../utils/formatDate";
 
 const ModalAdd = (props) => {
@@ -21,6 +19,7 @@ const ModalAdd = (props) => {
 
     const handleChange = (e) => {
         setData({ ...data, [e.target.name]: e.target.value })
+        
     }
 
 
@@ -28,17 +27,27 @@ const ModalAdd = (props) => {
         <>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Edit Accounts</Modal.Title>
+                    <Modal.Title>Add Accounts</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <div className="body-edit">
                         <div className="mb-3">
                             <label className="form-label">Name</label>
-                            <input type="text" name="name" className="form-control" value={data.name && data.name} onChange={handleChange} />
+                            <input 
+                            type="text" 
+                            name="name" 
+                            className="form-control" 
+                            value={data.name && data.name} 
+                            onChange={handleChange} />
                         </div>
                         <div className="mb-3">
                             <label className="form-label">Phone Number</label>
-                            <input type="text" name="phone" className="form-control" value={data.phone && data.phone} onChange={handleChange} />
+                            <input 
+                            type="text" 
+                            name="phone" 
+                            className="form-control" 
+                            value={data.phone && data.phone} 
+                            onChange={handleChange} />
                         </div>
                         <div className="mb-3">
                             <label className="form-label">Email address</label>

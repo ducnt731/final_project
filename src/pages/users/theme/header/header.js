@@ -8,25 +8,25 @@ const Header = () => {
     const navigate = useNavigate()
     return (
         <div >
-            <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+            <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary">
 
-                <div class="container-fluid">
+                <div className="container-fluid">
 
                     <button
                         data-mdb-collapse-init
-                        class="navbar-toggler"
+                        className="navbar-toggler"
                         type="button"
                         data-mdb-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <i class="fas fa-bars"></i>
+                        <i className="fas fa-bars"></i>
                     </button>
 
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <a className="navbar-brand mt-2 mt-lg-0" href="/">
                             <img
                                 src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
                                 height="15"
@@ -35,28 +35,27 @@ const Header = () => {
                             />
                         </a>
 
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Theaters</a>
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Theaters</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">My ticket</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">My ticket</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Breaking news</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Breaking news</a>
                             </li>
                         </ul>
-
                     </div>
 
-                    <div class="d-flex align-items-center">
+                    <div className="d-flex align-items-center">
                         {localStorage.getItem("token") ?
 
                             <Dropdown>
                                 <Dropdown.Toggle id="dropdown-basic">
                                     <img
                                         src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                                        class="rounded-circle"
+                                        className="rounded-circle"
                                         height="25"
                                         alt="Black and White Portrait of a Man"
                                         loading="lazy"

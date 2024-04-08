@@ -1,6 +1,6 @@
 import { memo, useEffect, useState } from "react"
 import { toast } from 'react-toastify';
-import './loginForm.scss'
+import './register.scss'
 import { loginApi, registerApi } from "../../service/userService";
 import { useNavigate } from "react-router-dom";
 
@@ -115,21 +115,18 @@ const RegisterForm = () => {
                             value={data && data.dateOfBirth}
                             onChange={handleChange}
                         />
-
                     </div>
+
                     <div className="input-box">
-                        <select name="gender" defaultValue={"female"} value={data && data.gender} className="form-select" onChange={handleChange} >
+                        <select name="gender" defaultValue={"female"} value={data && data.gender} className="form-select" onChange={handleChange} placeholder="Gender">
                             <option value={"female"}>Female</option>
                             <option value={"male"}>Male</option>
                             <option value={"other"}>Other</option>
                         </select>
                     </div>
 
-
-
                     <button
                         type="submit"
-
                     >{loadingAPI && <i class="fa-solid fa-sync fa-spin"></i>} Register</button>
 
                 </form>

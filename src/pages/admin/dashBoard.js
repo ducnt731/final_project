@@ -51,35 +51,35 @@ const DashBoard = () => {
     return (
         <main className='main-container'>
             <div className='main-title'>
-                <h3>DASHBOARD</h3>
+                <h3>Dashboard</h3>
             </div>
 
             <div className='main-cards'>
                 <div className='card'>
                     <div className='card-inner'>
-                        <h3>PRODUCTS</h3>
-                        <i className="fa-solid fa-table-cells-large card_icon"></i>
+                        <h4>Earning(Monthly)</h4>
+                        <i className="card_icon fa-solid fa-money-bill-wave"></i>
                     </div>
                     <h1>300</h1>
                 </div>
                 <div className='card'>
                     <div className='card-inner'>
-                        <h3>THEATERS</h3>
-                        <i className="fa-solid fa-location-dot icon card_icon"></i>
+                        <h4>Earning(Week)</h4>
+                        <i className="card_icon fa-solid fa-money-bill-wave"></i>
                     </div>
                     <h1>12</h1>
                 </div>
                 <div className='card'>
                     <div className='card-inner'>
-                        <h3>CUSTOMERS</h3>
-                        <i className="fa-solid fa-users icon card_icon"></i>
+                        <h4>Total tickets sold</h4>
+                        <i className="card_icon fa-solid fa-ticket"></i>
                     </div>
                     <h1>33</h1>
                 </div>
                 <div className='card'>
                     <div className='card-inner'>
-                        <h3>STAFFS</h3>
-                        <i className="fa-solid fa-users icon card_icon card_icon"></i>
+                        <h4>Total number of canceled tickets</h4>
+                        <i className="card_icon fa-solid fa-ticket"></i>
                     </div>
                     <h1>42</h1>
                 </div>

@@ -38,9 +38,10 @@ const LoginForm = () => {
                 localStorage.setItem("user_id", data.user._id)
                 localStorage.setItem("token", data.accessToken)
                 navigate('/')
+                toast.success("Login successful!!!")
             }
         } catch (error) {
-
+            toast.error("Wrong email or password")
         }
 
         // if (res && res.token) {

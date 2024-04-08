@@ -10,6 +10,7 @@ export const Router = {
     ADMIN: {
         ADMINHOME: "admin",
         MOVIES: "admin/movie",
-        ACCOUNT: "admin/manage_accounts"
+        ACCOUNT: "admin/manage_accounts",
+        DASHBOARD: "admin/dashboard"
     }
 }

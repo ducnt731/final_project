@@ -1,5 +1,4 @@
 import { Router } from "./service/router"
-import HomePage from "./pages/users/homePage"
 import { Route, Routes } from "react-router-dom"
 import MasterLayout from "./pages/users/theme/masterLayout"
 import TheaterPage from "./pages/users/theaterPage"
@@ -10,12 +9,14 @@ import Account from "./component/Manage_account/accounts"
 import LayoutNonHeader from "./pages/users/theme/layoutNonHeader/LayoutNonHeader"
 import RegisterForm from "./component/registerForm.js/registerForm"
 import ForgotPassword from "./component/ForgotPassword/ForgotPassword"
+import DashBoard from "./pages/admin/dashBoard"
+import HomePage from "./pages/users/homePage/homePage"
 
 const renderUserRouter = () => {
     const userRouter = [
         {
             path: Router.USER.HOME,
-            component: <HomePage />
+            component: <HomePage/>
         },
         {
             path: Router.USER.THEATER,
@@ -45,6 +46,10 @@ const renderUserRouter = () => {
         {
             path: Router.ADMIN.ACCOUNT,
             component: <Account />
+        },
+        {
+            path: Router.ADMIN.DASHBOARD,
+            component: <DashBoard />
         }
     ]
     return (
